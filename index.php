@@ -57,4 +57,5 @@
     $app = new CmOta();
     $app
     ->setConfig( 'basePath', $protocol.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']) )
+    ->setConfigJSON( 'githubRepos', 'github.json' )
     ->run();
